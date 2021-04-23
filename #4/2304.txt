@@ -1,0 +1,21 @@
+Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+
+For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
+
+You can modify the input array in-place.
+
+Related: https://leetcode.com/problems/first-missing-positive/
+
+
+And the optimized solution:
+https://leetcode.com/problems/first-missing-positive/discuss/1169752/Python-3-Very-Concise-Better-to-understand-83-.63-Faster-less-than-91.73-memory-usage
+def firstMissingPositive(self, nums: List[int]) -> int:
+	 for i in range(1,2**32):
+		 if i not in nums:
+                return i
+RIGHT checking 'in' is O(1)!
+
+
+Longer solution: 
+https://leetcode.com/problems/first-missing-positive/discuss/872448/Python-O(n)-solution-with-constant-space-EXPLAINED-with-clear-train-of-thoughts
+(seems to use the idea of sorting number according to index. Then just loop through it again)
