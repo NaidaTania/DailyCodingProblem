@@ -30,3 +30,8 @@ If R= A xor B, then A= R xor B, also B= R xor A.
 (get)
 1. if position 0, return 0
 2. 2nd position will be head xor a
+
+
+Solutions:
+https://medium.com/dev-genius/xor-doubly-linked-list-3b6123af0137
+https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/
