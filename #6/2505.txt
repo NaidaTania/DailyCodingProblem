@@ -1,0 +1,32 @@
+An XOR linked list is a more memory efficient doubly linked list. 
+Instead of each node holding next and prev fields, it holds a field named both, 
+which is an XOR of the next node and the previous node. 
+
+Implement an XOR linked list; 
+it has an add(element) which adds the element to the end, and a get(index) which returns the node at index.
+
+If using a language that has no pointers (such as Python), 
+you can assume you have access to get_pointer and dereference_pointer functions 
+that converts between nodes and memory addresses.
+
+
+Hint: 
+
+Every object is stored at memory address and any pointer (reference) is a way to access that object.
+
+In C++ you can convert any address to integer simply by casting it to suitable data type.
+
+After converting address into Integer now you can perform mathematical 
+and logical operations on these addresses. Like XOR, addition, subtraction etc.
+
+If R= A xor B, then A= R xor B, also B= R xor A.
+(1(a) = 1(b) xor 0) == (1(b) = 1(a) xor 0) == (0 = 1(a) xor 1(b))
+
+1. set head as 0
+(insert)
+2. 2nd element will be 0 xor null -> let's say a. Need to update head address to be null xor a
+3. 3rd element will be a xor null -> let's say b. Need to update a address to be head xor b
+
+(get)
+1. if position 0, return 0
+2. 2nd position will be head xor a
