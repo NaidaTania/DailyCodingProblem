@@ -1,0 +1,16 @@
+A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
+
+Given the root to a binary tree, count the number of unival subtrees
+
+Links:
+- https://www.dailycodingproblem.com/blog/unival-trees/
+- https://www.lintcode.com/en/old/problem/count-univalue-subtrees/#
+- https://tenderleo.gitbooks.io/leetcode-solutions-/content/GoogleMedium/250.html 
+
+
+Approach: binary tree recursion (start from the leaves)
+count the left's total unival, and whether that leaf is a unival or not
+count the right's total unival, and whether that leaf is a unival or not
+if both are unival, check if the root value is the same as the leaves
+
+Need to learn how to code a tree :(
