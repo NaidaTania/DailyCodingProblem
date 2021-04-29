@@ -8,6 +8,7 @@ since we pick 2, 6, and 5. [5, 1, 1, 5] should return 10, since we pick 5 and 5.
 
 Approach:
 Save top greatest 4 numbers and its index
+(I misread the qn and only summed 2 numbers rather than all possible ones oops.)
 '''
 
 import sys
